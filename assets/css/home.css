@@ -1,0 +1,136 @@
+/* Intro Section */
+.intro {
+    padding: 50px;
+    background-color: var(--color-gray);
+    text-align: center;
+}
+
+.intro h2 {
+    font-family: var(--title-font);
+    font-size: var(--big-font-size);
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.intro__content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.intro__content-text {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.intro__content-text h3 {
+    font-family: var(--title-font);
+    font-size: var(--h3-font-size);
+    color: var(--second-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.intro__content-text p {
+    font-family: "Lato", sans-serif;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    color: #4b5563;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__content-text {
+        max-width: 100%;
+    }
+}
+
+
+/* Services Section */
+
+.services-section {
+    background-color: var(--color-gray);
+    color: var(--second-color);
+    padding: 50px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666666;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--second-color);
+}
+
+.service-region {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.service-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.service-link {
+    font-size: var(--h3-font-size);
+    font-family: var(--title-font);
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+    }
+
+    .service-icon {
+        width: 40px;
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="assets/img/icons/sobalt_favicon.ico" type="image/x-icon"/>
@@ -13,19 +14,21 @@
 <!--===== HEADER =====-->
 <header class="l-header">
     <nav class="nav bd-grid">
-        <div>
-            <a href="#" class="nav__logo">Sobalt</a>
-        </div>
+        <div class="nav__left">
+            <div>
+                <a href="#" class="nav__logo"><img src="assets/img/sobalt-main.svg" alt="logo"></a>
+            </div>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Phase étude</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Phase travaux</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Phase suivi</a></li>
-            </ul>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link hover-underline-animation">Phase étude</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link hover-underline-animation">Phase travaux</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link hover-underline-animation">Phase suivi</a></li>
+                </ul>
+            </div>
         </div>
         <div>
-            <a href="#" class="nav__contact">Contact</a>
+            <a href="#" class="nav__contact ">Contact</a>
         </div>
         <div class="nav__toggle" id="nav-toggle">
             <i class='bx bx-menu'></i>
@@ -44,7 +47,7 @@
                 <li><i class='bx bx-check'></i>Pour bâtiment neuf ou existant</li>
                 <li><i class='bx bx-check'></i>Secteur tertiaire, industriel et résidentiel</li>
             </ul>
-            <a href="#" class="button">En savoir plus</a>
+            <a href="#services" class="button">En savoir plus</a>
         </div>
         <div class="home__img">
             <img class="home__blob" src="assets/img/hero-main.png" alt="Home">
@@ -85,13 +88,16 @@
             <div class="intro__content-text">
                 <h3>Respecter les objectifs légaux</h3>
                 <p>Réhabiliter ou mettre en œuvre une production solaire permet de contribuer à l’atteinte des objectifs
-                    de -40% d’économie d’énergie en 2030 fixés par le Décret Eco Energie Tertiaire.</p>
+                    de
+                    -40% d’économie d’énergie en 2030 fixés par le Décret Eco Energie Tertiaire</p>
             </div>
             <div class="intro__content-text">
                 <h3>S’engager pour la planète</h3>
-                <p>Chaque kWh économisé génère une économie de GES (Gaz à Effet de Serre)! De plus, une centrale solaire
-                    thermique voit une Analyse de Cycle de Vie (ACV) la plus faible des énergies renouvelables et une
-                    durée de vie de 30 ans !</p>
+                <p>Chaque kWh économisé génère une économie de GES (Gaz à Effet de Serre) ! De plus, une centrale
+                    solaire
+                    thermique a l'Analyse de Cycle de Vie (ACV) la plus faible des énergies renouvelables et une durée
+                    de
+                    vie de 30 ans !</p>
             </div>
         </div>
     </section>
@@ -114,24 +120,98 @@
         </div>
     </section>
 
-    <section class="figures">
-        <h2>Nos chiffres pour 2023</h2>
-        <div class="figures__content">
-            <div class="figures__content-text">
-                <h3>139</h3>
-                <p>diagnostics solaires réalisés en France</p>
+    <section class="figures-section">
+        <div class="figures-container">
+            <h2>Nos chiffres pour 2023</h2>
+            <div class="figures">
+                <div class="figures-item">
+                    <p class="figures-number">120</p>
+                    <p class="figures-description">diagnostics solaires<br>réalisés en France</p>
+                </div>
+                <div class="figures-item">
+                    <p class="figures-number">93</p>
+                    <p class="figures-description">études de rentabilité<br>projets solaires neufs</p>
+                </div>
+                <div class="figures-item">
+                    <p class="figures-number">50+</p>
+                    <p class="figures-description">personnes formées<br>à différents niveaux</p>
+                </div>
+                <div class="figures-item">
+                    <p class="figures-number">10+</p>
+                    <p class="figures-description">AMO-MOe solaires<br>réalisés en France</p>
+                </div>
             </div>
-            <div class="figures__content-text">
-                <h3>118</h3>
-                <p>études de rentabilité projets solaires neufs</p>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <h2>Notre offre de services</h2>
+        <p class="services-intro">Un projet d’implantation d’une installation solaire thermique ou une installation déjà
+            existante? Nous vous accompagnons sur toutes les étapes de votre projet, où en êtes-vous?</p>
+        <div class="services">
+            <div class="service-item">
+                <img src="assets/img/icons/sketch-icon.png" alt="Phase étude" class="service-icon">
+                <h3>Phase étude</h3>
+                <p class="service-region">France métropolitaine & DOM-TOM</p>
+                <p class="service-description">La phase étude a pour objectif d'analyser les solutions les plus adaptées
+                    à votre site et à votre usage. Cette étape vous permet de vous positionner sur la pertinence de
+                    mettre en œuvre des travaux d'implantation ou de réhabilitation.</p>
+                <a href="#" class="service-link hover-underline-animation">En savoir plus &nbsp;&nbsp; <i class='bx bx-right-arrow-alt'></i></a>
             </div>
-            <div class="figures__content-text">
-                <h3>50+</h3>
-                <p>personnes formées à différents niveaux</p>
+            <div class="service-item">
+                <img src="assets/img/icons/calendar_icon.png" alt="Phase travaux" class="service-icon">
+                <h3>Phase travaux</h3>
+                <p class="service-region">Région Parisienne & Grand Ouest</p>
+                <p class="service-description">Si les résultats de l'étude faisabilité technique et économique mettent
+                    en évidence un potentiel solaire, une mission de maîtrise d'œuvre peut être engagée. Cette étape
+                    constitue la conception, la réalisation et la réception des ouvrages.</p>
+                <a href="#" class="service-link hover-underline-animation">En savoir plus &nbsp;&nbsp; <i class='bx bx-right-arrow-alt'></i></a>
             </div>
-            <div class="figures__content-text">
-                <h3>10+</h3>
-                <p>AMO-Moe solaires réalisés en France</p>
+            <div class="service-item">
+                <img src="assets/img/icons/notepad_icon.png" alt="Phase suivi" class="service-icon">
+                <h3>Phase suivi</h3>
+                <p class="service-region">France métropolitaine & DOM-TOM</p>
+                <p class="service-description">Nous vous accompagnons dans la démarche de suivi énergétique de votre
+                    installation (supervision, contrôle technique, analyse des données compteurs). Recherche de
+                    solutions d'optimisation adaptée à votre installation solaire.</p>
+                <a href="#" class="service-link hover-underline-animation">En savoir plus &nbsp;&nbsp; <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2>Contactez-nous</h2>
+                <p class="contact-intro">Nous sommes à l'écoute de vos besoins, consultez-nous pour toute demande de
+                    devis
+                    ou questions.</p>
+                <p class="contact-note">Merci de préciser dans votre demande : l'adresse du site, le destinataire du
+                    devis,
+                    votre besoin, vos coordonnées.</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class='bx bx-envelope contact-icon'></i>
+                    <div class="contact-details">
+                        <p class="contact-type">Email</p>
+                        <p class="contact-detail"><a class="hover-underline-animation" href="mailto:contact@sobalt-energie.com">contact@sobalt-energie.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-time contact-icon'></i>
+                    <div class="contact-details">
+                        <p class="contact-type">Horaires d'ouverture</p>
+                        <p class="contact-detail">Lundi à Vendredi, 9h - 18h</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-phone contact-icon'></i>
+                    <div class="contact-details">
+                        <p class="contact-type">Téléphone</p>
+                        <p class="contact-detail"><a href="tel:0672224335" class="hover-underline-animation">06.72.22.43.35</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
