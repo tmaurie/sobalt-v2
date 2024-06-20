@@ -103,7 +103,7 @@
 }
 
 .service-region {
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: var(--second-color);
     font-weight: bold;
