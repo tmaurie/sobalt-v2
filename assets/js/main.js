@@ -49,8 +49,23 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-//     reset: true
 });
 
 sr.reveal('.home__data', {});
 sr.reveal('.home__img', {delay: 400});
+
+sr.reveal('.logo-container, .trust-text', {});
+sr.reveal('.intro__content-text', {delay: 200});
+
+/*==================== COUNTER ====================*/
+let counts = setInterval(updated);
+let upto = 0;
+
+function updated() {
+    let count = document.getElementById("counter");
+    count.innerHTML = ++upto;
+    //alert(document.getElementById("counter").getAttribute("data-target"));
+    if (upto == document.getElementById("counter").getAttribute("data-target")) {
+        clearInterval(counts);
+    }
+}

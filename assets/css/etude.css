@@ -1,0 +1,99 @@
+.feasibility-study {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333333;
+    background-color: var(--color-white);
+}
+
+h1 {
+    font-size: 32px;
+    color: #006d6f;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.study-info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.study-info li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.study-info img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.study-info a {
+    color: #006d6f;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.summary, .subvention {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.subvention a {
+    color: #006d6f;
+    text-decoration: none;
+}
+
+.study-steps {
+    margin-top: 30px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    background-color: #e6f4f1;
+    color: #006d6f;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-content {
+    max-width: 700px;
+}
+
+.step-content h4 {
+    font-size: 18px;
+    color: #006d6f;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.step-content .subvention {
+    margin-top: 10px;
+}
