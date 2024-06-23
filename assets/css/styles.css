@@ -154,6 +154,7 @@ img {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /*BUTTONS*/
 .button {
     display: inline-block;
@@ -243,7 +244,6 @@ img {
 }
 
 
-
 /*=== Show menu ===*/
 .show {
     right: 0;
@@ -288,7 +288,13 @@ img {
 .home__list i {
     color: var(--second-color);
     margin-right: 0.5rem;
+}
 
+.home__intro {
+    font-size: var(--normal-font-size);
+    color: #4b5563;
+    margin-bottom: var(--mb-6);
+    text-align: justify;
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -375,7 +381,7 @@ img {
     }
 
     .home__img {
-        width: 500px;
+        width: 450px;
         bottom: 15%;
     }
 
