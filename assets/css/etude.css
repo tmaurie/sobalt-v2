@@ -1,7 +1,11 @@
+.page-gray {
+    background-color: var(--color-gray);
+}
+
 .feasibility-study {
     padding: 50px;
     max-width: 1080px;
-    margin: 10px auto;
+    margin: 20px auto;
     color: #333333;
     background-color: var(--color-white);
     border-radius: 20px;
@@ -75,7 +79,7 @@
 
 .step {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .step-number {
@@ -109,4 +113,94 @@
 
 .step-content .subvention {
     margin-top: 10px;
+}
+
+.cta-section {
+    max-width: 1080px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--first-color);
+    font-size: 24px;
+    font-weight: var(--font-semi);
+    align-items: center;
+    color: var(--color-black);
+    padding: 50px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    color: #082B2B;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #082B2B;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: var(--title-font);
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #D0F5F3;
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+    .cta-section {
+        margin: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+.services-sur-mesures {
+    margin: 20px auto;
+    max-width: 1080px;
+    padding: 20px;
+}
+
+.services-sur-mesures h1 {
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 40%;
+}
+
+.service-item h2 {
+    color: #2d2d2d;
+    margin-bottom: 10px;
+    font-size: var(--h2-font-size);
+}
+
+.service-item p {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.service-item p strong {
+    color: #2d2d2d;
+}
+
+@media screen and (max-width: 768px) {
+    .service-item {
+        flex: 1 0 100%;
+    }
 }
