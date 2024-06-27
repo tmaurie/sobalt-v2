@@ -1,15 +1,23 @@
 .page-gray {
+    padding: 50px;
     background-color: var(--color-gray);
 }
 
 .feasibility-study {
     padding: 50px;
     max-width: 1080px;
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
     color: #333333;
     background-color: var(--color-white);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .page-gray {
+        padding: 20px;
+    }
 }
 
 .feasibility-study h1 {
@@ -147,7 +155,6 @@
 
 @media screen and (max-width: 768px) {
     .cta-section {
-        margin: 20px;
         flex-direction: column;
         text-align: center;
         gap: 20px;
@@ -167,9 +174,23 @@
 }
 
 .services-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
+}
+
+.service-first { grid-area: 1 / 1 / 3 / 2; }
+.service-second { grid-area: 3 / 1 / 4 / 2; }
+.service-third { grid-area: 1 / 2 / 2 / 3; }
+.service-fourth { grid-area: 2 / 2 / 3 / 3; }
+.service-fifth { grid-area: 3 / 2 / 4 / 3; }
+
+@media screen and (max-width: 768px) {
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .service-item {
@@ -203,4 +224,8 @@
     .service-item {
         flex: 1 0 100%;
     }
+}
+
+.trust-etudes {
+
 }

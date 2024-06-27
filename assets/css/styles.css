@@ -159,7 +159,7 @@ img {
 .button {
     display: inline-block;
     background-color: var(--second-color);
-    color: #fff;
+    color: var(--color-white);
     padding: 1rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: 0.5rem;
@@ -178,7 +178,7 @@ img {
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
-    font-family: "Lato", sans-serif;
+    font-family: var(--title-font);
 }
 
 .nav__left {
@@ -396,6 +396,7 @@ img {
     align-items: center;
     padding: 100px;
     background-color: #ffffff;
+    margin-bottom: -20px;
 }
 
 .logo-container {
