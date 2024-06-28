@@ -181,3 +181,52 @@
         flex: 1 0 100%;
     }
 }
+
+
+/* Exemple d'audit */
+.exemple-audit {
+    margin: 20px auto;
+    max-width: 1080px;
+}
+
+.audit-item {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.audit-item li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    list-style: initial;
+
+}
+
+.audit-item img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.caption {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .audit-item {
+        flex-direction: column;
+    }
+
+    .audit-item img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
