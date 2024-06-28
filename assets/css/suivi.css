@@ -1,0 +1,162 @@
+.page-gray__intro {
+    max-width: 1080px;
+    margin: 20px auto;
+}
+
+.page-gray__intro h1 {
+    color: var(--second-color);
+}
+
+.page-gray__intro p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.page-gray__question {
+    padding: 20px 0 20px 40px;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-left: 8px solid var(--second-color);
+}
+
+
+.feasibility-study {
+    padding: 50px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333333;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .page-gray {
+        padding: 20px;
+    }
+}
+
+.feasibility-study h1 {
+    font-size: var(--big-font-size);
+    color: var(--second-color);
+}
+
+.feasibility-study h2 {
+    font-size: var(--h2-font-size);
+    color: #333333;
+}
+
+.feasibility-study h3 {
+    color: var(--second-color);
+    font-size: var(--h3-font-size);
+    margin-top: 30px;
+}
+
+.study-info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.study-info li {
+    display: flex;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    margin-bottom: 10px;
+}
+
+.study-info i {
+    color: var(--second-color);
+    margin-right: 0.5rem;
+}
+
+.study-info img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.study-info a {
+    color: #006d6f;
+    text-decoration: none;
+}
+
+.summary {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.subvention {
+    padding: 20px 0 20px 40px;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-left: 8px solid var(--second-color);
+}
+
+.subvention a {
+    color: #006d6f;
+    text-decoration: none;
+}
+
+
+.step {
+    display: flex;
+    align-items: center;
+}
+
+.step-number {
+    background-color: #e6f4f1;
+    color: #006d6f;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-content {
+    max-width: 700px;
+}
+
+.step-content h4 {
+    font-size: 18px;
+    color: #006d6f;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.step-content .subvention {
+    margin-top: 10px;
+}
+
+.formation {
+    padding: 20px 0 20px 40px;
+    text-align: justify;
+    margin: 10px auto;
+    border-left: 8px solid var(--second-color);
+}
+
+.formation h3 {
+    margin-top: initial;
+    color: var(--second-color);
+    font-size: var(--h3-font-size);
+}
+
+.formation p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}

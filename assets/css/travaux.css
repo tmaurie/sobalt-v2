@@ -135,14 +135,6 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .cta-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-}
-
 .services-sur-mesures {
     margin: 20px auto;
     max-width: 1080px;

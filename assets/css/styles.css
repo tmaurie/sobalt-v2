@@ -785,3 +785,11 @@ img {
     background-color: #D0F5F3;
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
+
+@media screen and (max-width: 768px) {
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
