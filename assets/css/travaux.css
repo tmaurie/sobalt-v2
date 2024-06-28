@@ -1,3 +1,18 @@
+.page-gray__intro {
+    max-width: 1080px;
+    margin: 20px auto;
+}
+
+.page-gray__intro h1 {
+    color: var(--second-color);
+}
+
+.page-gray__intro p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+}
+
 .feasibility-study {
     padding: 50px;
     max-width: 1080px;
@@ -134,9 +149,14 @@
 }
 
 .services-sur-mesures h1 {
-    text-align: center;
-    color: #2d2d2d;
+    text-align: left;
     margin-bottom: 20px;
+}
+
+.services-sur-mesures p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
 }
 
 .services-grid {
@@ -144,13 +164,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    margin: 0 auto;
 }
 
-.service-first { grid-area: 1 / 1 / 3 / 2; }
-.service-second { grid-area: 3 / 1 / 4 / 2; }
-.service-third { grid-area: 1 / 2 / 2 / 3; }
-.service-fourth { grid-area: 2 / 2 / 3 / 3; }
-.service-fifth { grid-area: 3 / 2 / 4 / 3; }
+.service-first { grid-area: auto }
+.service-second { grid-area: auto }
+.service-third { grid-area: auto}
+.service-fourth { grid-area: auto }
+.service-fifth { grid-area: auto }
 
 @media screen and (max-width: 768px) {
     .services-grid {
