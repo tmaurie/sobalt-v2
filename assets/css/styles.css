@@ -750,3 +750,38 @@ img {
     text-underline-mode: under;
 
 }
+
+.page-gray {
+    padding: 50px;
+    background-color: var(--color-gray);
+}
+/* CTAs Section */
+.cta-section {
+    max-width: 1080px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--first-color);
+    font-size: 24px;
+    font-weight: var(--font-semi);
+    align-items: center;
+    color: var(--color-black);
+    padding: 50px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    color: #082B2B;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #082B2B;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: var(--title-font);
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #D0F5F3;
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
