@@ -748,11 +748,8 @@ img {
 /*Active menu*/
 .active-link {
     color: var(--second-color);
-    text-decoration: underline;
-    text-underline: #006d6f;
-    text-underline-offset: 0.2em;
-    text-underline-mode: under;
-
+    border-bottom: 2px solid var(--second-color);
+    padding: 0 0 4px 0;
 }
 
 .page-gray {
