@@ -700,6 +700,10 @@ img {
     color: #666666;
 }
 
+.footer-copyright a {
+    color: var(--second-color);
+}
+
 .footer-right {
     display: flex;
 }
