@@ -612,7 +612,7 @@ img {
 .contact-info {
     background-color: var(--color-white);
     color: var(--color-black);
-    padding: 20px;
+    padding: 40px;
     border-radius: 15px;
     max-width: 40%;
 }

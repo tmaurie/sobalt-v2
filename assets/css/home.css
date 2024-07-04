@@ -70,8 +70,9 @@
 }
 
 .services-intro {
+    max-width: 800px;
+    margin: 40px auto;
     font-size: 18px;
-    margin-bottom: 40px;
     color: #666666;
 }
 
@@ -116,7 +117,7 @@
 }
 
 .service-link {
-    font-size: var(--h3-font-size);
+    font-size: var(--normal-font-size);
     font-family: var(--title-font);
     color: var(--second-color);
     text-decoration: none;
