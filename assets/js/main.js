@@ -1,15 +1,41 @@
 /*===== MENU SHOW =====*/
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+const TOGGLE_CLASS = 'show'; // Constante pour la classe CSS
 
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show')
-        })
+// Fonction pour ajouter ou retirer la classe qui gère la visibilité
+const toggleNavVisibility = (navElement) => {
+    navElement.classList.toggle(TOGGLE_CLASS);
+};
+
+// Fonction pour masquer le menu
+const hideMenu = (navElement) => {
+    if (navElement.classList.contains(TOGGLE_CLASS)) {
+        navElement.classList.remove(TOGGLE_CLASS);
     }
-}
-showMenu('nav-toggle', 'nav-menu')
+};
+
+// Fonction principale pour montrer/masquer le menu et gérer les clics extérieurs
+const showMenu = (toggleId, navId) => {
+    const toggleElement = document.getElementById(toggleId);
+    const navElement = document.getElementById(navId);
+
+    if (toggleElement && navElement) {
+        // Gestion du clic sur le bouton de toggle
+        toggleElement.addEventListener('click', (event) => {
+            event.stopPropagation(); // Empêche la propagation vers le document
+            toggleNavVisibility(navElement);
+        });
+
+        // Gestion du clic en dehors du menu
+        document.addEventListener('click', (event) => {
+            if (!navElement.contains(event.target) && event.target !== toggleElement) {
+                hideMenu(navElement);
+            }
+        });
+    }
+};
+
+// Appel de la fonction
+showMenu('nav-toggle', 'nav-menu');
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -34,9 +60,9 @@ const scrollActive = () => {
             sectionId = current.getAttribute('id'),
             sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
-        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight && sectionsClass !== null) {
             sectionsClass.classList.add('active-link')
-        } else {
+        } else if (sectionsClass !== null) {
             sectionsClass.classList.remove('active-link')
         }
     })
@@ -56,16 +82,3 @@ sr.reveal('.home__img', {delay: 400});
 
 sr.reveal('.logo-container, .trust-text', {});
 sr.reveal('.intro__content-text', {delay: 200});
-
-/*==================== COUNTER ====================*/
-let counts = setInterval(updated);
-let upto = 0;
-
-function updated() {
-    let count = document.getElementById("counter");
-    count.innerHTML = ++upto;
-    //alert(document.getElementById("counter").getAttribute("data-target"));
-    if (upto == document.getElementById("counter").getAttribute("data-target")) {
-        clearInterval(counts);
-    }
-}

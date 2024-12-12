@@ -50,7 +50,7 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
+    font-family: var(--body-font), serif;
     font-size: var(--normal-font-size);
     color: var(--second-color);
     background-color: var(--first-color);
@@ -62,12 +62,12 @@ h1, h2, p {
 }
 
 p {
-    font-family: var(--body-font);
+    font-family: var(--body-font), serif;
     font-size: var(--normal-font-size);
 }
 
 h1, h2, h3 {
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
 }
 
 ul {
@@ -178,7 +178,7 @@ img {
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
 }
 
 .nav__left {
@@ -189,23 +189,23 @@ img {
 @media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
+        top: -100%; /* Le menu est caché en haut */
+        left: 0; /* Alignez à gauche pour qu'il s'étende en largeur */
+        width: 100%; /* Occupe toute la largeur de l'écran */
+        height: auto; /* Ajustez la hauteur selon le contenu */
         padding: 2rem;
-        background-color: var(--second-color);
-        transition: 0.5s;
+        background-color: var(--first-color);
+        transition: top 0.5s; /* Transition pour animer le mouvement vertical */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
     }
 }
 
 .nav__item {
     margin-bottom: var(--mb-4);
-}
-
-.nav__link {
-    position: relative;
-    color: var(--color-white);
 }
 
 .nav__link:hover {
@@ -218,7 +218,7 @@ img {
     border: 2px solid #082B2B;
     border-radius: 12px;
     font-size: 1.1rem;
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
     transition: 0.3s;
 }
 
@@ -246,7 +246,7 @@ img {
 
 /*=== Show menu ===*/
 .show {
-    right: 0;
+    top: var(--header-height); /* La hauteur peut être ajustée selon ta barre de navigation */
 }
 
 /*===== HOME =====*/
@@ -263,7 +263,7 @@ img {
 
 .home__title {
     font-size: var(--big-font-size);
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
     margin-bottom: var(--mb-5);
 }
 
@@ -278,7 +278,7 @@ img {
 
 .home__list {
     color: var(--color-black);
-    font-family: var(--body-font);
+    font-family: var(--body-font), serif;
     font-size: var(--h3-font-size);
     line-height: 2;
     font-weight: var(--font-semi);
@@ -756,6 +756,7 @@ img {
     padding: 50px;
     background-color: var(--color-gray);
 }
+
 /* CTAs Section */
 .cta-section {
     max-width: 1080px;
@@ -778,7 +779,7 @@ img {
     border: 2px solid #082B2B;
     border-radius: 12px;
     font-size: 1.1rem;
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
     transition: 0.3s;
 }
 
