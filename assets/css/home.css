@@ -6,7 +6,7 @@
 }
 
 .intro h2 {
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
     font-size: var(--big-font-size);
     color: #1f2937;
     margin-bottom: 40px;
@@ -26,7 +26,7 @@
 }
 
 .intro__content-text h3 {
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
     font-size: var(--h3-font-size);
     color: var(--second-color);
     margin-bottom: 10px;
@@ -78,18 +78,24 @@
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .service-item {
     background-color: var(--color-white);
-    border-radius: 10px;
-    padding: 20px;
-    width: 30%;
+    border-radius: 35px;
+    padding: 30px;
+    width: 25%;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+}
+
+.service-item-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .service-icon {
@@ -118,7 +124,7 @@
 
 .service-link {
     font-size: var(--normal-font-size);
-    font-family: var(--title-font);
+    font-family: var(--title-font), serif;
     color: var(--second-color);
     text-decoration: none;
     font-weight: bold;

@@ -82,3 +82,22 @@ sr.reveal('.home__img', {delay: 400});
 
 sr.reveal('.logo-container, .trust-text', {});
 sr.reveal('.intro__content-text', {delay: 200});
+
+// Sélectionnez l'élément nav
+const nav = document.querySelector('.nav');
+
+// Ajouter un écouteur d'événements sur le scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50 && window.innerWidth > 768) {
+        nav.classList.add('nav-scroll'); // Ajoute la classe
+    } else {
+        nav.classList.remove('nav-scroll'); // Retire la classe
+    }
+});
+
+
+const toggleTheme = () => {
+    document.documentElement.classList.toggle("dark-theme");
+};
+
+document.getElementById("theme-button").addEventListener("click", toggleTheme);

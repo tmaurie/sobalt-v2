@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Titan+One&display=swap');
 
 :root {
+    /* Dimensions et tailles */
     --header-height: 3rem;
     --font-semi: 700;
-    /*===== Colors =====*/
 
+    /* Couleurs */
     --first-color: #E6FEFC;
     --second-color: #00706D;
     --color-white: #fff;
-    --color-black: #000;
+    --color-black: #082b2b;
     --color-gray: #F6FAF9;
-    /*===== Font =====*/
+
+
+    /* Typographie */
     --body-font: "Lato", sans-serif;
     --title-font: "Urbanist", sans-serif;
     --big-font-size: 2rem;
@@ -19,12 +23,14 @@
     --h3-font-size: 1.15rem;
     --normal-font-size: .938rem;
     --smaller-font-size: .75rem;
-    /*===== Margins  =====*/
+
+    /* Marges */
     --mb-2: 1rem;
     --mb-4: 2rem;
     --mb-5: 2.5rem;
     --mb-6: 3rem;
-    /*===== z index =====*/
+
+    /* Z-index */
     --z-back: -10;
     --z-fixed: 100;
 }
@@ -39,7 +45,7 @@
     }
 }
 
-/*===== BASE =====*/
+/* ===== RÈGLES GLOBALES ===== */
 *, ::before, ::after {
     box-sizing: border-box;
 }
@@ -53,21 +59,19 @@ body {
     font-family: var(--body-font), serif;
     font-size: var(--normal-font-size);
     color: var(--second-color);
-    background-color: var(--first-color);
-
 }
 
 h1, h2, p {
     margin: 0;
 }
 
+h1, h2, h3 {
+    font-family: var(--title-font), serif;
+}
+
 p {
     font-family: var(--body-font), serif;
     font-size: var(--normal-font-size);
-}
-
-h1, h2, h3 {
-    font-family: var(--title-font), serif;
 }
 
 ul {
@@ -88,7 +92,7 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-    max-width: 1024px;
+    max-width: 1440px;
     display: grid;
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
@@ -100,7 +104,6 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #E6FEFC
 }
 
 /*===== CLASS CSS ===== */
@@ -158,16 +161,19 @@ img {
 /*BUTTONS*/
 .button {
     display: inline-block;
-    background-color: var(--second-color);
+    background-image: linear-gradient(to right, var(--second-color) 0%, #346e6e 51%, #103b3b 100%);
+    background-size: 200% auto;
+
     color: var(--color-white);
     padding: 1rem 2.5rem;
     font-weight: var(--font-semi);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     transition: 0.3s;
 }
 
 .button:hover {
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    background-position: right center; /* change the direction of the change here */
 }
 
 
@@ -179,6 +185,18 @@ img {
     align-items: center;
     font-weight: var(--font-semi);
     font-family: var(--title-font), serif;
+    transition: all 0.3s ease;
+}
+
+.nav-scroll {
+    max-width: 1024px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13px);
+    border-radius: 2rem;
+    padding: var(--mb-4);
+    margin-top: var(--mb-2);
+    transition: all 0.3s ease;
 }
 
 .nav__left {
@@ -187,6 +205,11 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+    .l-header {
+        padding: 0 2rem;
+        background: var(--first-color);
+    }
+
     .nav__menu {
         position: fixed;
         top: -100%; /* Le menu est caché en haut */
@@ -213,17 +236,18 @@ img {
 }
 
 .nav__contact {
-    color: #082B2B;
+    color: var(--color-white);
+    background-color: var(--second-color);
     padding: 0.75rem 1.5rem;
-    border: 2px solid #082B2B;
-    border-radius: 12px;
+    border-radius: 2rem;
     font-size: 1.1rem;
     font-family: var(--title-font), serif;
     transition: 0.3s;
 }
 
 .nav__contact:hover {
-    background-color: #D0F5F3;
+    background-color: var(--second-color);
+    color: var(--color-white);
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
@@ -254,7 +278,7 @@ img {
     position: relative;
     row-gap: 5rem;
     padding: 4rem 0 5rem;
-
+    background: linear-gradient(0deg, var(--color-white), var(--first-color) 25%);
 }
 
 .home__data {
@@ -295,6 +319,8 @@ img {
     color: #4b5563;
     margin-bottom: var(--mb-6);
     text-align: justify;
+    line-height: 1.5;
+    max-width: 500px;
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -308,7 +334,7 @@ img {
 @media screen and (min-width: 576px) {
     .home {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 4rem 0 2rem;
     }
 
@@ -461,7 +487,7 @@ img {
 .logo-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 50px;
 }
 
 @media (max-width: 1000px) {
@@ -539,11 +565,12 @@ img {
 
 
 .figures-container {
-    background-color: var(--second-color);
+    --angle: 180deg;
+    background: linear-gradient(var(--angle), var(--second-color), #095252);
     color: var(--color-white);
     padding: 50px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 50px;
     max-width: 900px;
     margin: 50px auto;
 }
@@ -579,8 +606,8 @@ img {
 /* Contact Section */
 
 .contact-section {
-    background-color: #006d6f;
-
+    --angle: 180deg;
+    background: linear-gradient(var(--angle), var(--second-color), #095252);
 }
 
 .contact-container {
